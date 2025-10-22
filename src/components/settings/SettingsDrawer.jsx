@@ -105,36 +105,21 @@ export function SettingsDrawer({ isOpen, onClose }) {
                             </Link>
 
                             <a
-                                href="https://github.com/open-source-uom/myuom/blob/main/LICENSE"
+                                href="https://github.com/TolisSth/myuowm/blob/main/LICENSE"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <SettingsOption Icon={FaFileAlt} onClick={onClose} text={i18n.t("license")} />
                             </a>
+                           <SettingsOption Icon={FaShareAlt} onClick={handleShare} text={i18n.t("share_app")} />
                             <a
-                                href="https://drive.google.com/drive/folders/1LToRmuLuJDSXsTl99GL80mmP4ifcjw6V?usp=sharing"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <SettingsOption Icon={FaBook} onClick={onClose} text={i18n.t("app_manual")} />
-
-                            </a>
-                            <SettingsOption Icon={FaShareAlt} onClick={handleShare} text={i18n.t("share_app")} />
-                            <a
-                                href="https://github.com/open-source-uom/myuom"
+                                href="https://github.com/TolisSth/myuowm"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <SettingsOption Icon={FaGithub} onClick={onClose} text={i18n.t("github_contribute")} />
                             </a>
-                            <a
-                                href="https://docs.google.com/forms/u/2/d/e/1FAIpQLSduM517c4OtIs-CNv5cjQtYcj6OXRDtCP6x0Q7d4Ymhd3xQMg/viewform"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <SettingsOption Icon={FaRegComment} onClick={onClose} text={i18n.t("form_feedback")} />
-                            </a>
-                        </Box>
+                       </Box>
                     </Box>
                 </DrawerBody>
 
